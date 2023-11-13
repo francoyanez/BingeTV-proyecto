@@ -1,0 +1,88 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.nav__hero{
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo__name{
+    font-size: 24px;
+    margin-right: 500px;
+    padding-top: 15px; 
+}
+
+.link{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+    transition: 1s;
+    
+}
+
+.link:hover{
+    color: #FFA196;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 350;
+    color: #fff;
+    margin-top: -30px;
+}
+
+.div-active{
+    margin-top: auto;
+}
+
+.title--active{
+    color: #FA8072;
+    font-weight: 600;
+    font-size: 56px;
+}
+
+.copy{
+    font-size: 24px;
+    color: var(--gray);
+    text-shadow: var(--shadow)  var(--color_shadow);
+    margin: 15px 0;
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #FFA196 0%, #FA8072 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.cta:hover{
+    background-color: #1238ce;
+    color: rgb(10, 10, 10);
+}
+
+.mockup{
+    object-fit: cover;
+}
