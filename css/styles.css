@@ -63,6 +63,7 @@ body{
     text-decoration: none;
     font-weight: 300;
     padding: 10px;
+    transition: 1s;
 }
 
 .link:hover{
@@ -85,10 +86,15 @@ body{
 .mockup{
     object-fit: cover;
 }
+.mockup:hover{
+    transform: translate(-200px);
+    transition: 2s;
+}
 
 .hero__textos{
     width: 48%;
 }
+
 
 .title{
     font-size: 56px;
@@ -126,7 +132,8 @@ body{
     color: var(--black2);
     font-weight: 700;
     box-shadow: var(--shadow) var(--color_shadow);
-    border-radius: 6px;
+    border-radius: 12px;
+    transition: 1s;
 }
 
 .cta:hover{
@@ -144,6 +151,16 @@ body{
     font-size: 42px;
 }
 
+.subtitle__1{
+    color: #FFA196;
+    font-size: 42px;
+}
+
+.subtitle__2{
+    color: #fafafa;
+    font-size: 42px;
+}
+
 .subtitle--modifier{
     text-align: center;
     margin-bottom: 16px;
@@ -156,6 +173,16 @@ body{
     margin-bottom: 60px;
 }
 
+.copy__section__1{
+    color: #FFA196;
+    font-size: 22px;
+}
+
+.copy__section__2{
+    color: #fafafa;
+    font-size: 22px;
+}
+
 .copy__section--modifier{
     text-align: center;
     margin-bottom: 32px;
@@ -163,7 +190,7 @@ body{
 
 .container-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -178,6 +205,14 @@ body{
     text-align: right;
     margin-bottom: 60px;
     box-shadow: 0 0 6px var(--color_shadow);
+    transition: 2s;
+}
+
+.card:hover{
+transform: scale(1.1);
+box-shadow: 10px 9px 22px 0px rgba(0,0,0,0.57);
+-webkit-box-shadow: 10px 9px 22px 0px rgba(0,0,0,0.57);
+-moz-box-shadow: 10px 9px 22px 0px rgba(0,0,0,0.57);
 }
 
 .card__img{
@@ -194,10 +229,13 @@ body{
 }
 
 .card__list{
-    color: var(--gold2);
+    background: #30353B;
+    background: linear-gradient(180deg, #FFA196 0%, #FA8072 100%);
     font-weight: 700;
     margin: 25px 0 12px ;
     font-size: 18px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
@@ -214,18 +252,22 @@ body{
 
 .card__button{
     display: block;
-    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    background: linear-gradient(180deg, #FFA196 0%, #FA8072 100%);
     border-radius: 6px;
     text-decoration: none;
     width: 100%;
-    color: var(--black1);
+    color: #30353B;
     font-weight: 700;
     text-align: center;
     padding: 12px 0;
 }
 
+.card__button:hover{
+    color: #1A1B1F;
+}
+
 .card__date{
-    color: var(--gold2);
+    color: #FFA196;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 16px;
@@ -269,6 +311,23 @@ body{
 
 .testimony{
     background: #fafafa;
+}
+
+.testimony__1{
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.testimony__2{
+    width: 980px;
+    height: 980px;
+    transition: width 2s, height 2s, margin 2s;
+    margin: 50px auto 0;
+}
+
+.testimony__2:hover{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .testimony-container{
