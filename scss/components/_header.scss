@@ -1,88 +1,158 @@
-.hero{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+.container {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 100px 0;
+	height: auto;
+	&-modifier {
+		width: 60%;
+	}
+	&-cards {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&-bg {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&-cards {
+		justify-content: space-evenly;
+	}
+	&-bg {
+		justify-content: space-evenly;
+	}
+	&-modifier {
+		width: 80%;
+	}
+	&-modifier {
+		width: 90%;
+	}
 }
-
-.nav__hero{
-    color: #fff;
-    height: 70px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(180deg, #30353B 0%, #1A1B1F 100%);
+	&__main {
+		height: calc(100vh - 70px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+	}
+	&__textos {
+		width: 48%;
+		margin-left: -600px;
+	}
+	&__main {
+		justify-content: flex-end;
+		min-height: 70px;
+		height: auto;
+		padding: 30px 0;
+	}
+	&__textos {
+		width: 100%;
+		text-align: center;
+	}
 }
-
-.nav__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: inherit;
-    padding: 0;
+.nav__hero {
+	color: #fff;
+	height: 70px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-.logo__name{
-    font-size: 24px;
-    margin-right: 500px;
-    padding-top: 15px; 
+.nav__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: inherit;
+	padding: 0;
 }
-
-.link{
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-    font-weight: 300;
-    padding: 10px;
-    transition: 1s;
-    
+.logo__name {
+	font-size: 24px;
+	margin-right: 500px;
+	padding-top: 15px;
 }
-
-.link:hover{
-    color: #FFA196;
+.link {
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+	font-weight: 300;
+	padding: 10px;
+	transition: 1s;
+	&:hover {
+		color: #FFA196;
+	}
+	&-active {
+		color: #F4BD76;
+		font-weight: 700;
+	}
 }
-
-.title{
-    font-size: 56px;
-    font-weight: 350;
-    color: #fff;
-    margin-top: -30px;
+.mockup {
+	object-fit: cover;
 }
-
-.div-active{
-    margin-top: auto;
+.title {
+	font-size: 56px;
+	font-weight: 350;
+	color: #fff;
+	margin-top: -30px;
+	&-active {
+		color: #FA8072;
+		font-weight: 600;
+		font-size: 56px;
+	}
+	&__footer {
+		font-size: 24px;
+		margin-bottom: 32px;
+	}
 }
-
-.title--active{
-    color: #FA8072;
-    font-weight: 600;
-    font-size: 56px;
+.div-active {
+	margin-top: auto;
 }
-
-.copy{
-    font-size: 24px;
-    color: var(--gray);
-    text-shadow: var(--shadow)  var(--color_shadow);
-    margin: 15px 0;
+.copy {
+	font-size: 24px;
+	color: #ffffff80;
+	text-shadow: 0 8px 8px  #00000033;
+	margin: 15px 0;
+	&__active {
+		font-weight: 700;
+	}
+	&__section {
+		color: #30353B;
+		font-size: 22px;
+		line-height: 32px;
+		margin-bottom: 60px;
+		&__1 {
+			color: #fafafa;
+			font-size: 22px;
+		}
+		&__2 {
+			color: #fafafa;
+			font-size: 22px;
+		}
+		&-modifier {
+			text-align: center;
+			margin-bottom: 32px;
+		}
+	}
+	&__section {
+		font-size: 20px;
+	}
 }
-
-.copy__active{
-    font-weight: 700;
-}
-
-.cta{
-    padding: 20px 30px;
-    display: inline-block;
-    background: linear-gradient(180deg, #FFA196 0%, #FA8072 100%);
-    text-decoration: none;
-    color: var(--black2);
-    font-weight: 700;
-    box-shadow: var(--shadow) var(--color_shadow);
-    border-radius: 12px;
-    transition: 1s;
-}
-
-.cta:hover{
-    background-color: #1238ce;
-    color: rgb(10, 10, 10);
-}
-
-.mockup{
-    object-fit: cover;
+.cta {
+	padding: 20px 30px;
+	display: inline-block;
+	background: linear-gradient(180deg, #FFA196 0%, #FA8072 100%);
+	text-decoration: none;
+	color: #30353B;
+	font-weight: 700;
+	box-shadow: 0 8px 8px #00000033;
+	border-radius: 12px;
+	transition: 1s;
+	&:hover {
+		background-color: #1238ce;
+		color: rgb(10, 10, 10);
+	}
 }
