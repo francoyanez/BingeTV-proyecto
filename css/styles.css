@@ -95,6 +95,16 @@ body{
     margin-left: -600px;
 }
 
+.main{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
 
 .title{
     font-size: 56px;

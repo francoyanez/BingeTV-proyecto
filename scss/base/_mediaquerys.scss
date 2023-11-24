@@ -1,3 +1,4 @@
+
 @media screen and (max-width:700px){
     main .container,
     footer .container{
@@ -16,6 +17,16 @@
 
     .logo{
         padding: 15px 0 ;
+        text-align: center;
+    }
+
+    .cta{
+        margin-left: 208px;
+        margin-top: 20px;
+
+    }
+
+    .div-active{
         text-align: center;
     }
 
@@ -47,12 +58,20 @@
         margin-bottom: 20px;
     }
 
+    body main .grid-container{
+        grid-template-columns: 200px;
+        margin-top: 100px;
+        margin-bottom: 5px;
+    }
+
     .title{
         font-size: 35px;
+        text-align: center;
     }
 
     .copy{
         font-size: 20px;
+        text-align: center;
     }
 
     .subtitle{
@@ -131,8 +150,19 @@
         width: 95%;
     }
 
+    .cta{
+        margin-left: 148px;
+        margin-top: 20px;
+    }
+
     .testimony__card{
         width: 95%;
+    }
+    
+    .testimony-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .testimony__history{
