@@ -619,7 +619,7 @@ body main .grid-container div .p-text:hover {
   color: #fff; }
   .contact__icon {
     font-size: 14px;
-    color: #F4BD76;
+    color: #FFA196;
     line-height: 20px;
     margin-right: 4px; }
     .contact__icon-modifier {
@@ -725,7 +725,26 @@ body main .grid-container div .p-text:hover {
     width: 80%; }
   .item__contact {
     width: 100%;
-    padding: 30px 0; } }
+    padding: 30px 0; }
+  .grid-contacto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; }
+  .grid-contacto-container div h2 {
+    text-align: center;
+    padding: initial;
+    font-size: 51px; }
+  .grid-contacto-container div section p {
+    text-align: center;
+    font-size: 20px; }
+  .grid-contacto-container div section span {
+    font-size: 16px; }
+  .formulario-coment {
+    max-width: 500px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: auto; } }
 
 @media screen and (max-width: 500px) {
   .mockup {
@@ -749,7 +768,7 @@ body main .grid-container div .p-text:hover {
   .testimony__history {
     font-size: 20px; }
   .container--modifier {
-    width: 90%; }
+    width: 100%; }
   .newsletter {
     width: 100%;
     display: none; }
@@ -765,4 +784,28 @@ body main .grid-container div .p-text:hover {
   .download__title {
     font-size: 16px; }
   .download__logo {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .grid-contacto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; }
+  .grid-image {
+    margin: 0 auto; }
+  .grid-contacto-container div h2 {
+    text-align: center;
+    padding: initial;
+    font-size: 34px;
+    margin-left: 45px; }
+  .grid-contacto-container div section p {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 30px; }
+  .grid-contacto-container div section span {
+    font-size: 16px;
+    margin-left: 30px; }
+  .formulario-coment {
+    max-width: 500px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-top: auto; } }
